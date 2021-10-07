@@ -1,0 +1,24 @@
+<section id="speciality" class="speciality_area pt-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_title text-center pb-60">
+                    <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Spécialités</h4>
+                    <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                </div> 
+            </div>
+        </div> 
+    </div> 
+    <div class="speciality_wrapper d-flex flex-wrap">
+        <div *ngFor="let speciality of specialities" class="single_speciality wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+            <img src="{{ speciality.image }}-{{ speciality.id }}.jpg" alt="speciality">
+            <div class="speciality_content">
+                <ul class="meta">
+                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                </ul>
+                <h5 class="speciality_title">{{ speciality.title }}</h5>
+            </div> 
+        </div>  
+    </div> 
+</section>
