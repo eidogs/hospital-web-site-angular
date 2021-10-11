@@ -6,7 +6,7 @@ import { catchError, retry } from "rxjs/operators";
 import { Doctor } from './doctors/doctor';
 import { Speciality } from './specialities/speciality';
 import { Service } from './services/service';
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
